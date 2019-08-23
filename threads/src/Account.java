@@ -32,7 +32,7 @@ public class Account {
         bal += amt;
         System.out.println(name + " setting balance : " + bal);
         setBalance(bal);
-        notifyAll();
+        notifyAll(); //notifies who are waiting	
     }
 
     public synchronized void withdraw(String name, double amt) { //synchronized adds lock
